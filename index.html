@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadrumplus - Website Under Construction</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            width: 100%;
+            max-width: 700px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Added shadow for better focus */
+        }
+
+        .logo {
+            margin-bottom: 20px;
+        }
+
+        .logo img {
+            max-width: 100%;
+            height: auto;
+            max-height: 180px; /* Slightly increased max height */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adding shadow to logo */
+        }
+
+        .description {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.5; /* Improved readability */
+        }
+
+        .animation {
+            font-size: 1.1rem;
+            margin-top: 20px;
+        }
+
+        .dots {
+            display: inline-block;
+        }
+
+        .dot {
+            height: 10px;
+            width: 10px;
+            margin: 0 3px;
+            background-color: #ffffff;
+            border-radius: 50%;
+            display: inline-block;
+            animation: blink 1.5s infinite;
+        }
+
+        .dot:nth-child(2) {
+            animation-delay: 0.3s;
+        }
+
+        .dot:nth-child(3) {
+            animation-delay: 0.6s;
+        }
+
+        @keyframes blink {
+            0%, 20% { opacity: 1; }
+            50% { opacity: 0.3; }
+            100% { opacity: 1; }
+        }
+
+        footer {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.8); /* Light text color for contrast */
+            background-color: rgba(0, 0, 0, 0.7); /* Darker background with transparency */
+            padding: 10px 0; /* Add padding for better spacing */
+            border-radius: 5px; /* Optional: Rounded corners for a smooth look */
+        }
+
+        /* Media Queries for responsiveness */
+        @media (max-width: 600px) {
+            .description {
+                font-size: 1rem; /* Smaller font size for mobile */
+            }
+
+            .animation {
+                font-size: 0.9rem; /* Adjusted animation text size */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="logo.png" alt="Quadrumplus Logo"> <!-- PNG logo -->
+        </div>
+        <div class="description">
+            Welcome to Quadrum +, an Architecture and Engineering firm dedicated to innovation and excellence. Our website is currently under construction, but we’re building something amazing for you. Stay tuned!
+        </div>
+        <div class="animation">
+            Loading<span class="dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </span>
+        </div>
+    </div>
+    <footer>
+        &copy; 2025 Quadrumplus. All Rights Reserved.
+    </footer>
+</body>
+</html>
