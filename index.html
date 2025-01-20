@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Quadrum + Architecture and Engineering - Website under construction. Contact us at info@quadrumplus.com or +355692232690.">
     <title>Quadrumplus - Website Under Construction</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
             font-family: 'Roboto', sans-serif;
-            background: url('background.jpg') no-repeat center center fixed;
-            background-size: cover;
-            color: #ffffff;
+            background: #ffffff;
+            color: #333333;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -22,11 +23,10 @@
         .container {
             text-align: center;
             padding: 20px;
-            background: rgba(0, 0, 0, 0.7);
+            background-color: rgba(255, 255, 255, 0);
+            border: 1px solid rgba(221, 221, 221, 0.1);
             border-radius: 10px;
-            width: 100%;
-            max-width: 700px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
         }
 
         .logo {
@@ -36,24 +36,21 @@
         .logo img {
             max-width: 100%;
             height: auto;
-            max-height: 180px;
-            box-shadow: none; /* Remove the shadow */ 
+            max-height: 120px;
         }
 
         .description {
             font-size: 1.1rem;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
             max-width: 600px;
             margin: 0 auto;
             line-height: 1.5;
+            color: #555555;
         }
 
         .animation {
             font-size: 1.1rem;
             margin-top: 20px;
-            background-color: rgba(255, 255, 255, 0.1); 
-            padding: 10px;
-            border-radius: 5px; 
         }
 
         .dots {
@@ -61,10 +58,10 @@
         }
 
         .dot {
-            height: 15px; 
-            width: 15px; 
-            margin: 0 5px; 
-            background-color: #fff; 
+            height: 12px;
+            width: 12px;
+            margin: 0 5px;
+            background-color: #007bff;
             border-radius: 50%;
             display: inline-block;
             animation: blink 1.5s infinite;
@@ -80,8 +77,56 @@
 
         @keyframes blink {
             0%, 20% { opacity: 1; }
-            50% { opacity: 0.2; } 
+            50% { opacity: 0.3; }
             100% { opacity: 1; }
+        }
+
+        .contact {
+            margin-top: 20px;
+        }
+
+        .contact-info {
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: #666666;
+        }
+
+        .contact-button {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease-in-out;
+            margin-bottom: 10px;
+        }
+
+        .contact-button:hover {
+            background-color: #0056b3;
+        }
+
+        .contact-button:focus {
+            outline: 2px solid #0056b3;
+            outline-offset: 2px;
+        }
+
+        .social-links {
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: #007bff;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            color: #007bff;
+            margin: 0 10px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .social-links a:hover {
+            color: #0056b3;
         }
 
         footer {
@@ -90,40 +135,7 @@
             width: 100%;
             text-align: center;
             font-size: 0.9rem;
-            color: rgba(255, 255, 255, 0.8);
-            background-color: rgba(0, 0, 0, 0.7);
-            padding: 10px 0;
-            border-radius: 5px;
-        }
-
-        /* Media Queries for responsiveness */
-        @media (max-width: 600px) {
-            .description {
-                font-size: 1rem;
-            }
-
-            .animation {
-                font-size: 0.9rem;
-            }
-        }
-
-        .contact {
-            margin-top: 20px;
-        }
-
-        .contact-button {
-            display: inline-block;
-            padding: 10px 20px;
-            border-radius: 5px;
-            background-color: #007bff; /* Adjust background color as desired */
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-            transition: background-color 0.3s ease-in-out;
-        }
-
-        .contact-button:hover {
-            background-color: #0069d9; /* Adjust hover color as desired */
+            color: #999999;
         }
     </style>
 </head>
@@ -143,7 +155,15 @@
             </span>
         </div>
         <div class="contact">
-            <a href="mailto:info@quadrumplus.com" class="contact-button">Get in touch</a>
+            <a href="mailto:quadrumplus@gmail.com" class="contact-button">Get in touch (Email)</a>
+            <a href="tel:+355692232690" class="contact-button">Call Now</a>
+            <div class="contact-info">
+                Address: Rruga "Kavajes", Pallati 127, Shkalla 1/3, Apartamenti 7
+            </div>
+            <div class="social-links">
+                <a href="https://www.instagram.com/quadrumplus/" target="_blank">Instagram</a> | 
+                <a href="https://www.facebook.com/quadrumplus" target="_blank">Facebook</a>
+            </div>
         </div>
     </div>
     <footer>
